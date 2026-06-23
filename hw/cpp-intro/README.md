@@ -33,6 +33,31 @@ Does your function work correctly if number is negative? If it is 0?
 
 You may find modulus `%` operator useful.
 
+You can pass an array to a function like so:
+```cpp
+void func(char arr[]) {
+    arr[0] = 'H'
+    arr[1] = 'i'
+    arr[2] = ' ';
+    arr[3] = 'a'
+    arr[4] = 'r'
+    arr[5] = 'r'
+    arr[6] = 'a'
+    arr[7] = 'y';
+    arr[8] = '\0'; // special "zero" symbol which indicates end of string
+}
+
+int main() {
+    char arr[9];
+
+    func(arr);
+
+    std::cout << arr << "\n";
+}
+
+// Output: "Hi array"
+```
+
 ### Task 3. atoi.
 
 Implement a function analogous to [`atoi`](https://en.cppreference.com/cpp/string/byte/atoi). This function takes a string and interprets it as an integer, if possible.
