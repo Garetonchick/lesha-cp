@@ -7,7 +7,6 @@ int main() {
 
     int* i_ptr = arr;
 
-
     cout << *i_ptr << "\n";
     cout << *(i_ptr + 1) << "\n";
     cout << *(i_ptr + 2) << "\n";
