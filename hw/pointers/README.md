@@ -27,7 +27,8 @@ Your task is to write a program which maintains a list of items (represented as 
 Initially the list is empty. You need to support 3 operation types for your list:
 
 1) `1 x i` 
-Insert number x after ith element in the list.
+Insert number x before ith element in the list. If length of the list is n, then it 
+is possible to add element before nth element - i.e. as the last one.
 
 2) `2 i`
 Erase ith number from the list.
